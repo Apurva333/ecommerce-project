@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
 
-function Navbar() {
+export default function Navbar() {
   return (
-    <nav>
-      <Link to="/">Products</Link>
+    <nav style={{ padding: "12px", borderBottom: "1px solid #ddd" }}>
+      <Link to="/" style={{ marginRight: 16 }}>Products</Link>
       <Link to="/add">Add Product</Link>
     </nav>
   );
 }
-
-export default Navbar;
